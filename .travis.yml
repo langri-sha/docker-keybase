@@ -1,0 +1,19 @@
+sudo: required
+install: true
+services:
+  - docker
+
+before_script:
+  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+
+script:
+- |
+    set -e
+    docker build -t langrisha/keybase:latest .
+
+after_success:
+- |
+    if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) &&
+        [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+        docker push langrisha/keybase:$TRAVIS_TAG
+    fi
