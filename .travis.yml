@@ -7,4 +7,4 @@ script:
 - |
     set -e
     docker build -t langrisha/keybase:latest .
-    docker run --rm langrisha/keybase:latest status
+    docker run --rm langrisha/keybase:latest keybase status
