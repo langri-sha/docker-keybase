@@ -30,6 +30,6 @@ RUN \
 
 USER keybase
 WORKDIR /home/keybase
-ENTRYPOINT ["/bin/bash"]
+CMD ["bash"]
 
 RUN run_keybase
