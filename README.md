@@ -59,5 +59,14 @@ The container process is configured to run as the user `keybase` belonging to th
 Do not forget to run the container process interactively and to login with
 your user when the container starts.
 
+## Changelog
+
+### [1.0.0] - 2016-03-25
+
+Initial release
+
 [travis-ci]: https://travis-ci.org/langri-sha/docker-keybase
 [travis-ci-badge]: https://travis-ci.org/langri-sha/docker-keybase.svg?branch=master
+
+
+[1.0.0]: https://github.com/langri-sha/docker-keybase/compare/cb994c3...237c641
