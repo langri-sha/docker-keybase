@@ -3,9 +3,13 @@ LABEL maintainer "Filip Dupanović (https://keybase.io/langrisha)"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+RUN apt-get update \
+	&& apt-get install -y apt-utils \
+	&& apt-get dist-upgrade -y
+
 RUN \
 	# Install dependencies
-	apt-get update && apt-get install -y \
+	apt-get install -y \
 		fuse \
 		libappindicator1 \
 		--no-install-recommends \
