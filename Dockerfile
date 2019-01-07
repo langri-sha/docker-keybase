@@ -33,7 +33,10 @@ RUN groupadd -g 1000 keybase \
 	&& useradd --create-home -g keybase -u 1000 keybase
 
 	# Cleanup
-RUN rm -r /var/lib/apt/lists/* \
+RUN find /var/lib/apt -type f -delete \
+	&& find /var/cache/apt -type f -delete \
+	&& find /var/log -type f -regextype posix-extended -regex '.*\.(gz|xz|[0-9])' -delete \
+	&& find /var/log -type f -exec truncate -s0 '{}' '+' \
 	&& rm keybase_amd64.deb*
 
 USER keybase
