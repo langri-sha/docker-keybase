@@ -4,6 +4,17 @@ LABEL maintainer "Filip Dupanović (https://keybase.io/langrisha)"
 ARG DEBIAN_FRONTEND=noninteractive
 ARG CURLOPTS="--remote-time --location --fail --tlsv1.2 --show-error"
 
+ARG BUILD_DATE
+ARG VCSREF
+
+LABEL org.label-schema.name="keybase"
+LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.vcs-url="https://github.com/langrisha/docker-keybase"
+LABEL org.label-schema.vcs-ref="${VCSREF}"
+LABEL org.label-schema.description="Docker container with signed Keybase.io client install"
+LABEL org.label-schema.docker.cmd="docker run -ti --init --name keybase"
+LABEL org.label-schema.build-date="${BUILD_DATE}"
+
 RUN apt-get update \
 	&& apt-get install -y apt-utils \
 	&& apt-get dist-upgrade -y
