@@ -1,6 +1,7 @@
 # docker-keybase
 
 [![Build Status][travis-ci-badge]][travis-ci]
+[![](https://images.microbadger.com/badges/image/langrisha/keybase.svg)](https://microbadger.com/images/langrisha/keybase "Get your own image badge on microbadger.com")
 
 Docker container with signed Keybase.io client install.
 
