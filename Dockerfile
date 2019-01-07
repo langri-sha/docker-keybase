@@ -1,6 +1,8 @@
 FROM ubuntu
 LABEL maintainer "Filip Dupanović (https://keybase.io/langrisha)"
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN \
 	# Install dependencies
 	apt-get update && apt-get install -y \
