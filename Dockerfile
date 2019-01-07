@@ -7,15 +7,17 @@ RUN apt-get update \
 	&& apt-get install -y apt-utils \
 	&& apt-get dist-upgrade -y
 
-RUN \
-	# Install dependencies
-	apt-get install -y \
+RUN apt-get install -y \
+		curl \
+		gnupg \
+	&& apt-get install -y --no-install-recommends \
 		fuse \
 		libappindicator1 \
-		--no-install-recommends \
+		libgconf-2-4 \
+		psmisc
 
 	# Get and verify Keybase.io's code signing key
-	&& curl https://keybase.io/docs/server_security/code_signing_key.asc | \
+RUN curl https://keybase.io/docs/server_security/code_signing_key.asc | \
 		gpg --import \
 	&& gpg --fingerprint 222B85B0F90BE2D24CFEB93F47484E50656D16C7 \
 
