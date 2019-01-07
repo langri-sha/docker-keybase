@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-curl
+FROM ubuntu
 LABEL maintainer "Filip Dupanović (https://keybase.io/langrisha)"
 
 RUN \
