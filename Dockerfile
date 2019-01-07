@@ -2,6 +2,7 @@ FROM ubuntu
 LABEL maintainer "Filip Dupanović (https://keybase.io/langrisha)"
 
 ARG DEBIAN_FRONTEND=noninteractive
+ARG CURLOPTS="--remote-time --location --fail --tlsv1.2 --show-error"
 
 RUN apt-get update \
 	&& apt-get install -y apt-utils \
@@ -17,13 +18,13 @@ RUN apt-get install -y \
 		psmisc
 
 	# Get and verify Keybase.io's code signing key
-RUN curl https://keybase.io/docs/server_security/code_signing_key.asc | \
+RUN curl $CURLOPTS --silent https://keybase.io/docs/server_security/code_signing_key.asc | \
 		gpg --import \
 	&& gpg --fingerprint 222B85B0F90BE2D24CFEB93F47484E50656D16C7 \
 
 	# Get, verify and install client package
-	&& curl -O https://prerelease.keybase.io/keybase_amd64.deb.sig \
-	&& curl -O https://prerelease.keybase.io/keybase_amd64.deb \
+	&& curl $CURLOPTS --silent -O https://prerelease.keybase.io/keybase_amd64.deb.sig \
+	&& curl $CURLOPTS -O https://prerelease.keybase.io/keybase_amd64.deb \
 	&& gpg --verify keybase_amd64.deb.sig keybase_amd64.deb \
 	&& dpkg -i keybase_amd64.deb
 
