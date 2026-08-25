@@ -12,7 +12,8 @@ Run a named container and attach to it.
 docker run --name keybase -it langrisha/keybase
 ```
 
-Login into your account and provision the device. You can now use keybase from within the container. Detach from the container to get back to your host.
+Login into your account and provision the device. You can now use keybase from
+within the container. Detach from the container to get back to your host.
 
 ```
 ctrl+pq
@@ -46,7 +47,8 @@ USER keybase
 
 ## Tips
 
-You can copy your user and device information from a container to your host, or the other way around.
+You can copy your user and device information from a container to your host, or
+the other way around.
 
 ```
 docker cp keybase:/home/keybase/.config/keybase config
@@ -54,10 +56,11 @@ docker cp keybase:/home/keybase/.config/keybase config
 
 ## Notes
 
-The container process is configured to run as the user `keybase` belonging to the `keybase` group (UID and GID `1000`). By default, runs the command `bash`.
+The container process is configured to run as the user `keybase` belonging to
+the `keybase` group (UID and GID `1000`). By default, runs the command `bash`.
 
-Do not forget to run the container process interactively and to login with
-your user when the container starts.
+Do not forget to run the container process interactively and to login with your
+user when the container starts.
 
 ## Changelog
 
@@ -66,7 +69,6 @@ your user when the container starts.
 Initial release
 
 [travis-ci]: https://travis-ci.org/langri-sha/docker-keybase
-[travis-ci-badge]: https://travis-ci.org/langri-sha/docker-keybase.svg?branch=master
-
-
+[travis-ci-badge]:
+  https://travis-ci.org/langri-sha/docker-keybase.svg?branch=master
 [1.0.0]: https://github.com/langri-sha/docker-keybase/compare/cb994c3...237c641
