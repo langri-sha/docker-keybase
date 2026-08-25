@@ -64,6 +64,11 @@ user when the container starts.
 
 ## Changelog
 
+### Unreleased
+
+Rebuilt on Debian bookworm. Debian jessie went end-of-life and its apt suites
+moved to the archive, so the image could no longer be built at all.
+
 ### [1.0.0] - 2016-03-25
 
 Initial release
