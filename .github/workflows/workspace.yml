@@ -1,0 +1,16 @@
+name: Workspace
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  check:
+    uses: langri-sha/github/.github/workflows/check.yml@v0.14.1
+    with:
+      prettier: true
+      projen: true
+      typescript: true
+    secrets: inherit

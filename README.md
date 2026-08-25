@@ -1,6 +1,6 @@
 # docker-keybase
 
-[![Build Status][travis-ci-badge]][travis-ci]
+[![Workspace][workspace-badge]][workspace]
 
 Docker container with signed Keybase.io client install.
 
@@ -68,7 +68,8 @@ user when the container starts.
 
 Initial release
 
-[travis-ci]: https://travis-ci.org/langri-sha/docker-keybase
-[travis-ci-badge]:
-  https://travis-ci.org/langri-sha/docker-keybase.svg?branch=master
+[workspace]:
+  https://github.com/langri-sha/docker-keybase/actions/workflows/workspace.yml
+[workspace-badge]:
+  https://github.com/langri-sha/docker-keybase/actions/workflows/workspace.yml/badge.svg
 [1.0.0]: https://github.com/langri-sha/docker-keybase/compare/cb994c3...237c641
