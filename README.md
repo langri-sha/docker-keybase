@@ -1,6 +1,6 @@
 # docker-keybase
 
-[![Workspace][workspace-badge]][workspace]
+[![Image][image-badge]][image] [![Workspace][workspace-badge]][workspace]
 
 Docker container with signed Keybase.io client install.
 
@@ -73,6 +73,10 @@ moved to the archive, so the image could no longer be built at all.
 
 Initial release
 
+[image]:
+  https://github.com/langri-sha/docker-keybase/actions/workflows/image.yml
+[image-badge]:
+  https://github.com/langri-sha/docker-keybase/actions/workflows/image.yml/badge.svg
 [workspace]:
   https://github.com/langri-sha/docker-keybase/actions/workflows/workspace.yml
 [workspace-badge]:
