@@ -78,19 +78,23 @@
     {
       customType: 'regex',
       datasourceTemplate: 'npm',
-      managerFilePatterns: ['/\\.?projen.*.(js|cjs|mjs|ts|mts|cts)$/'],
-      matchStrings: ["pnpm@(?<currentValue>[^']+)"],
+      managerFilePatterns: ['/(^|/)\\.?projenrc\\.(js|cjs|mjs|ts|mts|cts)$/'],
+      matchStrings: [
+        'packageManager[\'"]?[,:]\\s*[\'"]pnpm@(?<currentValue>[^\'"]+)[\'"]',
+      ],
       depNameTemplate: 'pnpm',
       depTypeTemplate: 'dependencies',
     },
     {
       customType: 'regex',
       datasourceTemplate: 'npm',
-      managerFilePatterns: ['/\\.(js|cjs|mjs|ts|mts|cts|ya?ml)$/'],
-      matchStrings: [
-        '(bun|p?np)x (?<depName>[\\w\\-\\/]+)@(?<currentValue>[^s]+)',
+      managerFilePatterns: [
+        '/^\\.github/workflows/[^/]+\\.ya?ml$/',
+        '/\\.?projen.*.(js|cjs|mjs|ts|mts|cts)$/',
       ],
-      depNameTemplate: 'pnpm',
+      matchStrings: [
+        '(bun|p?np)x (?<depName>@?[\\w.-]+(?:/[\\w.-]+)?)@(?<currentValue>[^\\s\'"]+)',
+      ],
       depTypeTemplate: 'dependencies',
     },
   ],
