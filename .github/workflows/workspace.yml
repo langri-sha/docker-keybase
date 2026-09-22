@@ -8,7 +8,7 @@ on:
 
 jobs:
   check:
-    uses: langri-sha/github/.github/workflows/check.yml@v0.14.1
+    uses: langri-sha/github/.github/workflows/check.yml@v0.15.0
     with:
       prettier: true
       projen: true
