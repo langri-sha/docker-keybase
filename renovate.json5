@@ -90,7 +90,7 @@
       datasourceTemplate: 'npm',
       managerFilePatterns: [
         '/^\\.github/workflows/[^/]+\\.ya?ml$/',
-        '/\\.?projen.*.(js|cjs|mjs|ts|mts|cts)$/',
+        '/(^|/)\\.?projenrc\\.(js|cjs|mjs|ts|mts|cts)$/',
       ],
       matchStrings: [
         '(bun|p?np)x (?<depName>@?[\\w.-]+(?:/[\\w.-]+)?)@(?<currentValue>[^\\s\'"]+)',
