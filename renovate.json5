@@ -23,7 +23,7 @@
     {
       description: 'Versions owned by @langri-sha/projen-project. Declare the dependency in `.projenrc.ts` to manage it here instead',
       matchManagers: ['npm'],
-      matchPackageNames: ['projen', 'tsx', 'typescript'],
+      matchPackageNames: ['prettier', 'projen', 'tsx', 'typescript'],
       enabled: false,
     },
     {
