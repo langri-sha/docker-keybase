@@ -168,7 +168,7 @@ importers:
     devDependencies:
       '@langri-sha/prettier':
         specifier: ^0.4.6
-        version: 0.4.7(prettier@3.9.9)
+        version: 0.4.8(prettier@3.9.9)
       '@langri-sha/projen-project':
         specifier: ^0.31.0
         version: 0.31.2(prettier@3.9.9)(projen@0.86.5(constructs@10.8.1))(tsx@4.23.15)(typescript@5.9.3)
@@ -346,8 +346,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@langri-sha/prettier@0.4.7':
-    resolution: {integrity: sha512-h2z0ODFS6GEzUc3nVS0ox3AjsxCrgViY6rMxpyYH51OfWBacYHknN64vp061grctBlv8RZzmrjmWDKcBrH6Dtw==}
+  '@langri-sha/prettier@0.4.8':
+    resolution: {integrity: sha512-xxiJxn63LhNc+5PJLZv1bXhxhU8ywPffpIbDsc+wsVD5UEB73tj9wpd5TpFWRzgzSMEzXdmVArdjUdBcKtKELQ==}
     peerDependencies:
       prettier: ^3.0.0
 
@@ -786,7 +786,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.2':
     optional: true
 
-  '@langri-sha/prettier@0.4.7(prettier@3.9.9)':
+  '@langri-sha/prettier@0.4.8(prettier@3.9.9)':
     dependencies:
       prettier: 3.9.9
       prettier-plugin-ini: 1.3.0
