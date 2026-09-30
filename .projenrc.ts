@@ -40,10 +40,10 @@ const project = new Project({
   renovate: {
     packageRules: [
       {
-        description: 'Packages published from the langri-sha/projen monorepo',
+        description: 'Update our own packages together',
         groupName: 'langri-sha projen toolchain',
         groupSlug: 'langri-sha-projen',
-        matchSourceUrls: ['https://github.com/langri-sha/projen'],
+        matchPackageNames: ['@langri-sha/**'],
       },
       {
         description: 'Install our own packages without waiting them out',
