@@ -174,7 +174,7 @@ importers:
         version: 0.31.2(prettier@3.9.9)(projen@0.86.5(constructs@10.8.1))(tsx@4.23.15)(typescript@5.9.3)
       '@langri-sha/tsconfig':
         specifier: ^1.0.1
-        version: 1.0.1(typescript@5.9.3)
+        version: 1.1.0(typescript@5.9.3)
       prettier:
         specifier: 3.9.9
         version: 3.9.9
@@ -522,10 +522,10 @@ packages:
     peerDependencies:
       projen: ^0.86.0
 
-  '@langri-sha/tsconfig@1.0.1':
-    resolution: {integrity: sha512-edz4jWkTffOpnk/ZslBtfdQs4Cc5bwuRzDhjavoiIkZBaxJvmhURq1gTKuHz+/3fv2kbxuQfyLb402GIJdxr+w==}
+  '@langri-sha/tsconfig@1.1.0':
+    resolution: {integrity: sha512-OgXlvCo51R2VB2BUVNVuxJoJzuzFgXXNk/xtZzUl8qgRULH3Vv3hOsUsqSjvdAVzIv7JAi8froLO1IYRqF0kMg==}
     peerDependencies:
-      typescript: ^5.5.0
+      typescript: ^5.5.0 || ^6.0.0 || ^7.0.0
 
   '@schemastore/tsconfig@1.0.11':
     resolution: {integrity: sha512-cWpXSUji7Nz/Mhv4e8r6gEolN3d4jnta9HYQdEfl8AyAsFaTTucHrOA0OmQ9mTGsr9ZaXJHyh6YCK4MA7gaGAA==}
@@ -919,7 +919,7 @@ snapshots:
     dependencies:
       projen: 0.86.5(constructs@10.8.1)
 
-  '@langri-sha/tsconfig@1.0.1(typescript@5.9.3)':
+  '@langri-sha/tsconfig@1.1.0(typescript@5.9.3)':
     dependencies:
       typescript: 5.9.3
 
