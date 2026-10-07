@@ -9,6 +9,7 @@ Docker container with signed Keybase.io client install.
 Run a named container and attach to it.
 
 ```
+docker build --tag langrisha/keybase .
 docker run --name keybase -it langrisha/keybase
 ```
 
