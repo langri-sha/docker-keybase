@@ -9,6 +9,7 @@
   lockFileMaintenance: {
     enabled: true,
   },
+  postUpdateOptions: ['pnpmDedupe'],
   packageRules: [
     {
       description: 'Prioritize updates in Projen configurations',
