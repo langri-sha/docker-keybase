@@ -2,42 +2,38 @@
 
 [![Image][image-badge]][image] [![Workspace][workspace-badge]][workspace]
 
-Docker container with signed Keybase.io client install.
+A Docker image with the [Keybase](https://keybase.io) client, installed from
+Keybase's signed package.
 
 ## Usage
 
-Run a named container and attach to it.
+Build the image, start a named container, then log in and provision the device:
 
-```
+```sh
 docker build --tag langrisha/keybase .
 docker run --name keybase -it langrisha/keybase
 ```
 
-Login into your account and provision the device. You can now use keybase from
-within the container. Detach from the container to get back to your host.
+Detach with <kbd>Ctrl</kbd>+<kbd>P</kbd> <kbd>Ctrl</kbd>+<kbd>Q</kbd>, and use
+Keybase from the host:
 
-```
-ctrl+pq
-```
-
-Great, now you can execute commands from the host.
-
-```
+```sh
 echo "secret" | docker exec -i keybase keybase encrypt max
 ```
 
-And you can always attach to the container.
+Reattach with `docker attach keybase`.
 
+## Keeping your device
+
+Copy your user and device configuration out of the container:
+
+```sh
+docker cp keybase:/home/keybase/.config/keybase config
 ```
-docker attach keybase
-```
 
-## Extend
+Then build it into an image of your own:
 
-You can extend the image and copy your user and device information.
-
-```
-# Dockerfile
+```dockerfile
 FROM langrisha/keybase
 
 USER root
@@ -46,22 +42,7 @@ RUN chown -R keybase:keybase .config/keybase
 USER keybase
 ```
 
-## Tips
-
-You can copy your user and device information from a container to your host, or
-the other way around.
-
-```
-docker cp keybase:/home/keybase/.config/keybase config
-```
-
-## Notes
-
-The container process is configured to run as the user `keybase` belonging to
-the `keybase` group (UID and GID `1000`). By default, runs the command `bash`.
-
-Do not forget to run the container process interactively and to login with your
-user when the container starts.
+The container runs `bash` as the user `keybase`, with UID and GID 1000.
 
 [image]:
   https://github.com/langri-sha/docker-keybase/actions/workflows/image.yml
