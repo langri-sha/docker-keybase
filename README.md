@@ -63,17 +63,6 @@ the `keybase` group (UID and GID `1000`). By default, runs the command `bash`.
 Do not forget to run the container process interactively and to login with your
 user when the container starts.
 
-## Changelog
-
-### Unreleased
-
-Rebuilt on Debian bookworm. Debian jessie went end-of-life and its apt suites
-moved to the archive, so the image could no longer be built at all.
-
-### [1.0.0] - 2016-03-25
-
-Initial release
-
 [image]:
   https://github.com/langri-sha/docker-keybase/actions/workflows/image.yml
 [image-badge]:
@@ -82,4 +71,3 @@ Initial release
   https://github.com/langri-sha/docker-keybase/actions/workflows/workspace.yml
 [workspace-badge]:
   https://github.com/langri-sha/docker-keybase/actions/workflows/workspace.yml/badge.svg
-[1.0.0]: https://github.com/langri-sha/docker-keybase/compare/cb994c3...237c641
