@@ -20,7 +20,9 @@
   "type": "module",
   "scripts": {
     "default": "pnpm exec projen default",
-    "renovate": "pnpm exec projen renovate"
+    "renovate": "pnpm exec projen renovate",
+    "worktrunk:dry-run": "pnpm exec projen worktrunk:dry-run",
+    "worktrunk:show": "pnpm exec projen worktrunk:show"
   },
   "devDependencies": {
     "@langri-sha/prettier": "^0.4.6",
