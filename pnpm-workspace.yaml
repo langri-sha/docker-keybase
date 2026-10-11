@@ -7,4 +7,27 @@ allowBuilds:
   unrs-resolver: false
 minimumReleaseAgeExclude:
   - '@langri-sha/*'
+  - projen-babel-config
+  - projen-beachball
+  - projen-cargo
+  - projen-codeowners
+  - projen-dagger
+  - projen-editorconfig
+  - projen-eslint
+  - projen-husky
+  - projen-jest-config
+  - projen-license
+  - projen-lint-staged
+  - projen-lint-synthesized
+  - projen-pnpm-workspace
+  - projen-prettier
+  - projen-readme
+  - projen-renovate
+  - projen-ruff
+  - projen-skills
+  - projen-swcrc
+  - projen-ty
+  - projen-typescript-config
+  - projen-uv
+  - projen-worktrunk
 packages: []
