@@ -29,7 +29,7 @@
     "@langri-sha/projen-project": "^0.38.0",
     "@langri-sha/tsconfig": "^1.0.1",
     "prettier": "3.9.9",
-    "projen": "0.86.5",
+    "projen": "0.104.1",
     "tsx": "4.23.15",
     "typescript": "5.9.3"
   },
