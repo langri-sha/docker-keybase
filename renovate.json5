@@ -2,7 +2,7 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   configMigration: true,
-  extends: ['config:recommended'],
+  extends: ['config:recommended', 'github>langri-sha/renovate-config'],
   labels: ['dependencies'],
   minimumReleaseAge: '3 days',
   reviewersFromCodeOwners: true,
@@ -26,22 +26,6 @@
       matchManagers: ['npm'],
       matchPackageNames: ['prettier', 'projen', 'tsx', 'typescript'],
       enabled: false,
-    },
-    {
-      description: 'Update our own packages together',
-      groupName: 'langri-sha projen toolchain',
-      groupSlug: 'langri-sha-projen',
-      matchPackageNames: ['@langri-sha/**'],
-    },
-    {
-      description: 'Install our own packages without waiting them out',
-      matchPackageNames: ['@langri-sha/**'],
-      minimumReleaseAge: null,
-    },
-    {
-      description: 'Install our own GitHub Actions and Terraform modules without waiting them out',
-      matchPackageNames: ['langri-sha/**'],
-      minimumReleaseAge: null,
     },
   ],
   customManagers: [
