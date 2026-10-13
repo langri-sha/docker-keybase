@@ -19,17 +19,17 @@
   },
   "type": "module",
   "scripts": {
-    "default": "pnpm exec projen default",
-    "renovate": "pnpm exec projen renovate",
-    "worktrunk:dry-run": "pnpm exec projen worktrunk:dry-run",
-    "worktrunk:show": "pnpm exec projen worktrunk:show"
+    "default": "projen default",
+    "renovate": "projen renovate",
+    "worktrunk:dry-run": "projen worktrunk:dry-run",
+    "worktrunk:show": "projen worktrunk:show"
   },
   "devDependencies": {
     "@langri-sha/prettier": "^0.4.6",
     "@langri-sha/projen-project": "^0.38.0",
     "@langri-sha/tsconfig": "^1.0.1",
     "prettier": "3.9.9",
-    "projen": "0.86.5",
+    "projen": "0.104.1",
     "tsx": "4.23.15",
     "typescript": "5.9.3"
   },
