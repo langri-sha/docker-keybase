@@ -45,6 +45,13 @@ USER keybase
 
 The container runs `bash` as the user `keybase`, with UID and GID 1000.
 
+## Contributing
+
+Pull requests that change the `Dockerfile` build the image in CI and check that
+`keybase status` runs in it. See [CONTRIBUTING.md] in `langri-sha/github`.
+
+[contributing.md]:
+  https://github.com/langri-sha/github/blob/main/CONTRIBUTING.md
 [image]:
   https://github.com/langri-sha/docker-keybase/actions/workflows/image.yml
 [image-badge]:
