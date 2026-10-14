@@ -7,7 +7,8 @@ Keybase's signed package.
 
 ## Usage
 
-Build the image, start a named container, then log in and provision the device:
+CI doesn't publish the image: build it locally, start a named container, then
+log in and provision the device:
 
 ```sh
 docker build --tag langrisha/keybase .
@@ -31,7 +32,7 @@ Copy your user and device configuration out of the container:
 docker cp keybase:/home/keybase/.config/keybase config
 ```
 
-Then build it into an image of your own:
+Then build it into an image of your own, on top of the local build:
 
 ```dockerfile
 FROM langrisha/keybase
