@@ -8,6 +8,12 @@ on:
 
 jobs:
   check:
+    # The called workflow's Renovate post-upgrade job declares `contents:
+    # write`, and a called job may not exceed the caller's ceiling. Without
+    # this the run fails at startup before any job is created.
+    permissions:
+      contents: write
+      id-token: write
     uses: langri-sha/github/.github/workflows/check.yml@v0.24.0
     with:
       prettier: true
