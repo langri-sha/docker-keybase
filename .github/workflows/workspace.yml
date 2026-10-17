@@ -16,6 +16,8 @@ jobs:
       id-token: write
     uses: langri-sha/github/.github/workflows/check.yml@v0.30.0
     with:
+      dagger: true
+      dagger-version: v1.0.0-beta.17
       prettier: true
       projen: true
       typescript: true
