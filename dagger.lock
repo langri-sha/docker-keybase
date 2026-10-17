@@ -6,6 +6,7 @@
 ["","git-latest",["github.com/langri-sha/dagger",["tagPrefix","ci"],["version","v1.2.0"]],"refs/tags/v1.2.0"]
 ["","git-latest",["github.com/langri-sha/dagger",["tagPrefix","ci"],["version","v1.2.1"]],"refs/tags/v1.2.1"]
 ["","git-latest",["github.com/langri-sha/dagger",["tagPrefix","typescript"],["version","v1.2.0"]],"refs/tags/v1.2.0"]
+["","git-latest",["github.com/langri-sha/dagger",["tagPrefix","typescript"],["version","v1.2.1"]],"refs/tags/v1.2.1"]
 ["","git-sha",["github.com/dagger/prettier","refs/tags/v0.2.0"],"c9b4c3622c3e161903f497c4a7bb5140437de4a7"]
 ["","git-sha",["github.com/langri-sha/dagger","refs/tags/v1.2.0"],"457fc1e08d88d0d6e7ad767f30dec7feb3981eba"]
 ["","git-sha",["github.com/langri-sha/dagger","refs/tags/v1.2.1"],"998ed692e4d0a85b298952484ec7a5872139093e"]
