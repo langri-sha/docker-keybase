@@ -1,0 +1,18 @@
+ignore = [
+  "**/node_modules",
+  "**/dist",
+  "**/*.tsbuildinfo",
+]
+
+[modules.prettier]
+source = "dagger.io/js/prettier"
+
+[modules.prettier.settings]
+packageManager = "pnpm"
+baseImageAddress = "node:24-slim"
+
+[modules.ci]
+source = "github.com/langri-sha/dagger/ci@v1.2.0"
+
+[modules.typescript]
+source = "github.com/langri-sha/dagger/typescript@v1.2.0"
