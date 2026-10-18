@@ -15,4 +15,4 @@ baseImageAddress = "node:24-slim"
 source = "github.com/langri-sha/dagger/ci@v1.4.0"
 
 [modules.typescript]
-source = "github.com/langri-sha/dagger/typescript@v1.2.1"
+source = "github.com/langri-sha/dagger/typescript@v1.4.0"
