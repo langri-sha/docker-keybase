@@ -25,6 +25,9 @@ node_modules/
 !/tsconfig.json
 !/prettier.config.js
 !/.prettierignore
+!/.claude
+/.claude/settings.local.json
+!/.claude/settings.json
 !/CODEOWNERS
 !/.editorconfig
 !/license
