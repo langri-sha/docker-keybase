@@ -9,7 +9,7 @@ const project = new Project({
     authorUrl: 'https://langri-sha.com',
     bugsUrl: 'https://github.com/langri-sha/docker-keybase/issues',
     homepage: 'https://github.com/langri-sha/docker-keybase/#readme',
-    minNodeVersion: '24.16.0',
+    minNodeVersion: '24.22.1',
     repository: 'langri-sha/docker-keybase',
     type: 'module',
 
