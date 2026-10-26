@@ -35,6 +35,7 @@ const project = new Project({
   },
   dagger: {},
   editorConfig: {},
+  githubTemplates: {},
   lintSynthesized: {},
   pnpmWorkspace: {
     minimumReleaseAgeExclude: ['@langri-sha/*', ...Project.presetPackages],
