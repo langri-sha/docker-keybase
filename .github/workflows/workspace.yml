@@ -17,7 +17,7 @@ jobs:
     uses: langri-sha/github/.github/workflows/check.yml@v0.31.0
     with:
       dagger: true
-      dagger-version: v1.0.0-beta.20
+      dagger-version: v1.0.0-beta.21
       prettier: true
       projen: true
       typescript: true
