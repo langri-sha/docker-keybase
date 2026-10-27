@@ -49,6 +49,15 @@ const project = new Project({
   },
   typeScriptConfig: {},
   worktrunk: {},
+  skills: {
+    skills: [
+      {
+        source: 'langri-sha/skills',
+        ref: '21a148e364532f626e6586e2a65a0305cff6a911',
+        skills: ['create-commit', 'create-pr'],
+      },
+    ],
+  },
 })
 
 project.package?.addEngine('pnpm', '>= 11.0.0')

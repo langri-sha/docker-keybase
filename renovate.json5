@@ -24,7 +24,7 @@
     {
       description: 'Versions owned by @langri-sha/projen-project. Declare the dependency in `.projenrc.ts` to manage it here instead',
       matchManagers: ['npm'],
-      matchPackageNames: ['prettier', 'projen', 'tsx', 'typescript'],
+      matchPackageNames: ['prettier', 'projen', 'skills', 'tsx', 'typescript'],
       enabled: false,
     },
     {
@@ -38,6 +38,12 @@
       groupName: 'langri-sha Dagger modules',
       groupSlug: 'langri-sha-dagger-modules',
       matchDepNames: ['github.com/langri-sha/dagger/**'],
+    },
+    {
+      description: 'Skill commits carry no release date. Propose them without waiting out the release age',
+      matchManagers: ['custom.regex'],
+      matchDepTypes: ['skills'],
+      minimumReleaseAgeBehaviour: 'timestamp-optional',
     },
   ],
   customManagers: [
@@ -107,6 +113,16 @@
       depNameTemplate: 'github.com/{{{repo}}}{{#if subdir}}/{{{subdir}}}{{/if}}',
       packageNameTemplate: '{{{repo}}}',
       extractVersionTemplate: "^{{#if tagDir}}{{{tagDir}}}{{else}}{{#if subdir}}{{#unless (includes (toArray 'dagger/python' 'langri-sha/dagger') repo)}}{{{subdir}}}/{{/unless}}{{/if}}{{/if}}v(?<version>.+)$",
+    },
+    {
+      customType: 'regex',
+      datasourceTemplate: 'git-refs',
+      depTypeTemplate: 'skills',
+      managerFilePatterns: ['/(^|/)\\.?projenrc\\.(js|cjs|mjs|ts|mts|cts)$/'],
+      matchStrings: [
+        'source:\\s*[\'"](?<depName>[\\w.-]+/[\\w.-]+)[\'"],\\s*ref:\\s*[\'"](?<currentDigest>[0-9a-f]{40})[\'"]',
+      ],
+      packageNameTemplate: 'https://github.com/{{{depName}}}',
     },
     {
       customType: 'regex',
