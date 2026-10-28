@@ -50,10 +50,11 @@ const project = new Project({
   typeScriptConfig: {},
   worktrunk: {},
   skills: {
+    ignore: false,
     skills: [
       {
         source: 'langri-sha/skills',
-        ref: '21a148e364532f626e6586e2a65a0305cff6a911',
+        ref: 'c0cb19cc68f9c597ac580c0e415bf99dcb69d3fd',
         skills: ['create-commit', 'create-pr'],
       },
     ],
