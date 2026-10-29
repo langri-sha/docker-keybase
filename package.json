@@ -44,7 +44,7 @@
   "skills": [
     {
       "source": "langri-sha/skills",
-      "ref": "c0cb19cc68f9c597ac580c0e415bf99dcb69d3fd",
+      "ref": "82b843a43a9f822e64335d372105953eb5f90deb",
       "skills": [
         "create-commit",
         "create-pr"
