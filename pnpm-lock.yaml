@@ -167,7 +167,7 @@ importers:
   .:
     devDependencies:
       '@langri-sha/prettier':
-        specifier: ^0.4.6
+        specifier: 0.4.11
         version: 0.4.11(prettier@3.9.9)
       '@langri-sha/projen-project':
         specifier: ^0.45.0

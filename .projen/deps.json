@@ -2,7 +2,7 @@
   "dependencies": [
     {
       "name": "@langri-sha/prettier",
-      "version": "^0.4.6",
+      "version": "0.4.11",
       "type": "build"
     },
     {
