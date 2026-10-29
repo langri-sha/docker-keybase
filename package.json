@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "langri-sha/docker-keybase"
+    "url": "git+https://github.com/langri-sha/docker-keybase.git"
   },
   "license": "MIT",
   "author": {
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@langri-sha/prettier": "^0.4.6",
-    "@langri-sha/projen-project": "^0.43.0",
+    "@langri-sha/projen-project": "^0.44.2",
     "@langri-sha/tsconfig": "^1.0.1",
     "prettier": "3.9.9",
     "projen": "0.104.1",
