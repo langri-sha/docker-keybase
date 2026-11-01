@@ -170,8 +170,8 @@ importers:
         specifier: 0.4.11
         version: 0.4.11(prettier@3.9.9)
       '@langri-sha/projen-project':
-        specifier: ^0.46.0
-        version: 0.46.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.4)(tsx@4.23.15)(typescript@5.9.3)
+        specifier: ^0.47.0
+        version: 0.47.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.4)(tsx@4.23.15)(typescript@5.9.3)
       '@langri-sha/tsconfig':
         specifier: ^1.0.1
         version: 1.1.1(typescript@5.9.3)
@@ -358,8 +358,8 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@langri-sha/projen-project@0.46.0':
-    resolution: {integrity: sha512-pEqB3hlcSEV7ciBD2H2Ycur7lm9LAJZC2PeNBkAM3VOlD0Q/pFKKLCWwRytWqhhQtI0KWKCNiGbLNDktb3wP+g==}
+  '@langri-sha/projen-project@0.47.0':
+    resolution: {integrity: sha512-GEpyyL3hYKkr/YbJUBc3EL2lLvEcD8VBR+ZEj5JRMXGUFrvlduzr88S52pV965aNNeMzxA1jH0jgHruOo0W6JA==}
     peerDependencies:
       '@babel/core': ^8.0.0
       '@changesets/cli': ^3.0.0
@@ -892,7 +892,7 @@ snapshots:
       prettier: 3.9.9
       prettier-plugin-ini: 1.3.0
 
-  '@langri-sha/projen-project@0.46.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.4)(tsx@4.23.15)(typescript@5.9.3)':
+  '@langri-sha/projen-project@0.47.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.4)(tsx@4.23.15)(typescript@5.9.3)':
     dependencies:
       hosted-git-info: 10.1.1
       projen: 0.104.1(constructs@10.8.1)
