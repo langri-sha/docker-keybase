@@ -31,9 +31,9 @@
     "@langri-sha/tsconfig": "^1.0.1",
     "prettier": "3.9.9",
     "projen": "0.104.1",
-    "skills": "1.7.4",
+    "skills": "1.7.5",
     "tsx": "4.23.15",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "packageManager": "pnpm@12.16.1",
   "engines": {
