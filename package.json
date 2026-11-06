@@ -27,11 +27,11 @@
   },
   "devDependencies": {
     "@langri-sha/prettier": "0.4.11",
-    "@langri-sha/projen-project": "^0.50.0",
+    "@langri-sha/projen-project": "^0.51.0",
     "@langri-sha/tsconfig": "^2.0.0",
     "prettier": "3.9.9",
     "projen": "0.104.1",
-    "skills": "1.7.5",
+    "skills": "1.7.6",
     "tsx": "4.23.15",
     "typescript": "6.0.3"
   },
