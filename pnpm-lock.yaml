@@ -173,8 +173,8 @@ importers:
         specifier: ^0.51.0
         version: 0.51.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.6)(tsx@4.23.15)(typescript@6.0.3)
       '@langri-sha/tsconfig':
-        specifier: ^2.0.0
-        version: 2.0.0(typescript@6.0.3)
+        specifier: ^3.0.0
+        version: 3.0.0(typescript@6.0.3)
       prettier:
         specifier: 3.9.9
         version: 3.9.9
@@ -418,10 +418,10 @@ packages:
       vitest:
         optional: true
 
-  '@langri-sha/tsconfig@2.0.0':
-    resolution: {integrity: sha512-Z63R+J2wjUPJz0H9IEI+ddHcPWSSld930ATrksqE7TFiUd5jkbtn8dELB1v5A70SzaKemUZ4IJEVVBJuiGdrNw==}
+  '@langri-sha/tsconfig@3.0.0':
+    resolution: {integrity: sha512-ezvta6zHsLhZAD0La/FpRFh0qbHxrNLOs0akNN9iehHpPsT/FAm/++Yh6tRfbb+AUjo7+nbntq2xR3tbprWN5Q==}
     peerDependencies:
-      typescript: ^5.5.0 || ^6.0.0 || ^7.0.0
+      typescript: ^6.0.0 || ^7.0.0
 
   chownr@3.0.0:
     resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
@@ -783,7 +783,7 @@ snapshots:
       tsx: 4.23.15
       typescript: 6.0.3
 
-  '@langri-sha/tsconfig@2.0.0(typescript@6.0.3)':
+  '@langri-sha/tsconfig@3.0.0(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
 
