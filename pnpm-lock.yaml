@@ -170,8 +170,8 @@ importers:
         specifier: 0.4.11
         version: 0.4.11(prettier@3.9.9)
       '@langri-sha/projen-project':
-        specifier: ^0.50.0
-        version: 0.50.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.5)(tsx@4.23.15)(typescript@6.0.3)
+        specifier: ^0.51.0
+        version: 0.51.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.5)(tsx@4.23.15)(typescript@6.0.3)
       '@langri-sha/tsconfig':
         specifier: ^2.0.0
         version: 2.0.0(typescript@6.0.3)
@@ -358,13 +358,13 @@ packages:
     peerDependencies:
       prettier: ^3.0.0
 
-  '@langri-sha/projen-project@0.50.0':
-    resolution: {integrity: sha512-XS5G3i06IkwGlSrn5RF2tYis7TMw0OXSBbfUgbMeeALYptLwE4lyC1aGPPsNLfiESN1W4fyL3VDwzRhPcAiofg==}
+  '@langri-sha/projen-project@0.51.0':
+    resolution: {integrity: sha512-ExfjB5g+DkBoU9BmrQMDzPLLuB9TySUxerwb/QuwCbg987pbm71LLS2jlYvgw2nAuiZAXbyv59NgbRR5p38nbw==}
     peerDependencies:
       '@babel/core': ^8.0.0
       '@changesets/cli': ^3.0.0
       '@langri-sha/babel-preset': ^0.6.0
-      '@langri-sha/eslint-config': ^0.12.0
+      '@langri-sha/eslint-config': ^0.12.0 || ^0.13.0
       '@langri-sha/lint-staged': ^0.9.0
       '@langri-sha/prettier': ^0.4.0
       '@swc-node/register': ^1.0.0
@@ -378,7 +378,7 @@ packages:
       projen: '>=0.86.0 <1.0.0'
       skills: ^1.7.2
       tsx: ^4.0.0
-      typescript: ^5.5.0 || ^6.0.0
+      typescript: ^6.0.0
       vitest: ^5.0.0
     peerDependenciesMeta:
       '@babel/core':
@@ -564,8 +564,8 @@ packages:
     peerDependencies:
       projen: '>=0.86.0 <1.0.0'
 
-  projen-skills@0.3.3:
-    resolution: {integrity: sha512-4sDort8L828ebj2jqcosxmv0235Q7e1A0DQJlUoR2m5NpMca8HXSQPpP8ak2f3d3YlUSz1enSRd2y4vL1OyTJg==}
+  projen-skills@0.3.4:
+    resolution: {integrity: sha512-bGWyH/+w6ojZVxrQLoMXlVS2If4STpVcCG0zU+Bcm5vvqq+auUeGKdF9fpqeuthgNjeZZNGazx6uFmKOHgSf6A==}
     peerDependencies:
       projen: '>=0.86.0 <1.0.0'
 
@@ -744,7 +744,7 @@ snapshots:
       prettier: 3.9.9
       prettier-plugin-ini: 1.3.0
 
-  '@langri-sha/projen-project@0.50.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.5)(tsx@4.23.15)(typescript@6.0.3)':
+  '@langri-sha/projen-project@0.51.0(@langri-sha/prettier@0.4.11(prettier@3.9.9))(prettier@3.9.9)(projen@0.104.1(constructs@10.8.1))(skills@1.7.5)(tsx@4.23.15)(typescript@6.0.3)':
     dependencies:
       hosted-git-info: 10.1.1
       projen: 0.104.1(constructs@10.8.1)
@@ -768,7 +768,7 @@ snapshots:
       projen-readme: 0.1.17(projen@0.104.1(constructs@10.8.1))
       projen-renovate: 0.5.0(projen@0.104.1(constructs@10.8.1))
       projen-ruff: 0.2.0(projen@0.104.1(constructs@10.8.1))
-      projen-skills: 0.3.3(projen@0.104.1(constructs@10.8.1))
+      projen-skills: 0.3.4(projen@0.104.1(constructs@10.8.1))
       projen-swcrc: 0.2.0(projen@0.104.1(constructs@10.8.1))
       projen-ty: 0.2.0(projen@0.104.1(constructs@10.8.1))
       projen-typescript-config: 0.5.26(projen@0.104.1(constructs@10.8.1))
@@ -921,7 +921,7 @@ snapshots:
     dependencies:
       projen: 0.104.1(constructs@10.8.1)
 
-  projen-skills@0.3.3(projen@0.104.1(constructs@10.8.1)):
+  projen-skills@0.3.4(projen@0.104.1(constructs@10.8.1)):
     dependencies:
       projen: 0.104.1(constructs@10.8.1)
 
