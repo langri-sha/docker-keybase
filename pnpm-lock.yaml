@@ -184,9 +184,6 @@ importers:
       skills:
         specifier: 1.7.6
         version: 1.7.6
-      tsx:
-        specifier: 4.23.15
-        version: 4.23.15
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -847,6 +844,7 @@ snapshots:
       '@esbuild/win32-arm64': 0.28.2
       '@esbuild/win32-ia32': 0.28.2
       '@esbuild/win32-x64': 0.28.2
+    optional: true
 
   fsevents@2.3.3:
     optional: true
@@ -1025,6 +1023,7 @@ snapshots:
       esbuild: 0.28.2
     optionalDependencies:
       fsevents: 2.3.3
+    optional: true
 
   typescript@6.0.3: {}
 

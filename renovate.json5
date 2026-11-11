@@ -29,7 +29,6 @@
         'prettier',
         'projen',
         'skills',
-        'tsx',
         'typescript',
       ],
       enabled: false,
